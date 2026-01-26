@@ -20,25 +20,7 @@
                     │   Looking for exact words:        │
                     │   "async" OR "HTTP" OR "client"   │
                     │                                   │
-                    └───────────────────────────────────┘
-                                        │
-                                        ▼
-                    ┌───────────────────────────────────┐
-                    │       ❌ TERRIBLE RESULTS         │
-                    │                                   │
-                    │   • Repos with "HTTP" in name     │
-                    │   • Repos with "async" anywhere   │
-                    │   • MISSES: aiohttp, httpx, asks  │
-                    │     (best async libraries!)       │
-                    │                                   │
-                    └───────────────────────────────────┘
-
-
-                    ✅ GITGRAPH'S WAY (Smart)
-                    ──────────────────────────
-
-                    User searches: "async HTTP client"
-                                        │
+         
                                         ▼
                     ┌───────────────────────────────────┐
                     │         GEMINI AI                 │
