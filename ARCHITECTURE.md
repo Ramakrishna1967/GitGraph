@@ -1,11 +1,11 @@
-# 🧠 GitGraph RAG: Complete Architecture & Deployment Guide
+#  GitGraph RAG: Complete Architecture & Deployment Guide
 
 > **A $0 Hybrid Search Engine for GitHub Repository Discovery**  
 > Built for 2026 | Free Tier Only | Production Ready
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 1. [The Problem](#-the-problem)
 2. [The Solution](#-the-solution)
@@ -20,7 +20,7 @@
 
 ---
 
-## 🎯 The Problem
+##  The Problem
 
 ```mermaid
 mindmap
@@ -48,7 +48,7 @@ mindmap
 
 ---
 
-## 💡 The Solution
+##  The Solution
 
 ### GitGraph RAG = Vector Search + Graph Traversal
 
@@ -79,8 +79,8 @@ graph LR
 |--------|---------------|--------------|
 | Query Understanding | Literal keywords | Semantic intent |
 | "works with X" |  Not possible |  Graph traversal |
-| "alternatives to X" |  Manual search | ✅ `ALTERNATIVE_TO` edges |
-| Stack compatibility | ❌ Read every README | ✅ Dependency graph filter |
+| "alternatives to X" |  Manual search | `ALTERNATIVE_TO` edges |
+| Stack compatibility |  Read every README |  Dependency graph filter |
 
 ---
 
@@ -92,18 +92,18 @@ graph LR
 
 ```mermaid
 flowchart TB
-    subgraph "❌ GitHub's Approach"
+    subgraph " GitHub's Approach"
         Q1["Query: async HTTP client"] --> KW[Keyword Matcher]
         KW --> R1["Results: repos with 'async' OR 'HTTP' in name"]
-        R1 --> MISS["❌ Misses: aiohttp, httpx, asks"]
+        R1 --> MISS[" Misses: aiohttp, httpx, asks"]
     end
     
-    subgraph "✅ GitGraph's Solution"
+    subgraph " GitGraph's Solution"
         Q2["Query: async HTTP client"] --> EMB[Gemini Embedding]
         EMB --> VEC["Vector: [0.23, 0.87, ...]"]
         VEC --> PC[(Pinecone)]
         PC --> SEM["Semantic Similarity Search"]
-        SEM --> HIT["✅ Finds: aiohttp, httpx, asks, treq"]
+        SEM --> HIT[" Finds: aiohttp, httpx, asks, treq"]
     end
     
     style MISS fill:#ff6b6b
@@ -141,16 +141,16 @@ sequenceDiagram
 
 ```mermaid
 flowchart TB
-    subgraph "❌ GitHub's View"
+    subgraph " GitHub's View"
         R1[langchain] --- ISLAND1["Isolated Island"]
         R2[chromadb] --- ISLAND2["Isolated Island"]
         R3[unstructured] --- ISLAND3["Isolated Island"]
-        ISLAND1 -.- NO["❌ No connections visible"]
+        ISLAND1 -.- NO[" No connections visible"]
         ISLAND2 -.- NO
         ISLAND3 -.- NO
     end
     
-    subgraph "✅ GitGraph's Knowledge Graph"
+    subgraph " GitGraph's Knowledge Graph"
         LC((langchain))
         CH((chromadb))
         UN((unstructured))
@@ -218,21 +218,21 @@ graph LR
 
 ```mermaid
 flowchart TB
-    subgraph "❌ GitHub Experience"
+    subgraph  GitHub Experience"
         SEARCH["Search: 'PDF parser Python'"] --> RESULTS["500+ Results"]
         RESULTS --> MANUAL["Manual inspection of each README"]
-        MANUAL --> HOURS["⏰ Hours of research"]
+        MANUAL --> HOURS[" Hours of research"]
         HOURS --> MAYBE["Maybe find the right one?"]
         
         style MAYBE fill:#ff6b6b
     end
     
-    subgraph "✅ GitGraph Experience"
+    subgraph " GitGraph Experience"
         QUERY["Query: 'PDF parser for my LangChain + FastAPI stack'"] --> AGENT["LangGraph Agent"]
         AGENT --> HYBRID["Hybrid Search"]
         HYBRID --> FILTER["Stack-aware filtering"]
         FILTER --> TOP3["Top 3 recommendations with reasons"]
-        TOP3 --> DONE["✅ Decision in 3 seconds"]
+        TOP3 --> DONE[" Decision in 3 seconds"]
         
         style DONE fill:#4ade80
     end
@@ -273,15 +273,15 @@ flowchart LR
 ```mermaid
 graph TB
     subgraph "PROBLEMS"
-        P1["🔴 Semantic Blindness<br/>Keywords ≠ Concepts"]
-        P2["🔴 Structural Blindness<br/>No relationship awareness"]
-        P3["🔴 Decision Paralysis<br/>Too many results"]
+        P1[" Semantic Blindness<br/>Keywords ≠ Concepts"]
+        P2[" Structural Blindness<br/>No relationship awareness"]
+        P3[" Decision Paralysis<br/>Too many results"]
     end
     
     subgraph "SOLUTIONS"
-        S1["🟢 Vector Embeddings<br/>Pinecone + Gemini"]
-        S2["🟢 Knowledge Graph<br/>Neo4j relationships"]
-        S3["🟢 Intelligent Agent<br/>LangGraph fusion"]
+        S1[" Vector Embeddings<br/>Pinecone + Gemini"]
+        S2[" Knowledge Graph<br/>Neo4j relationships"]
+        S3[" Intelligent Agent<br/>LangGraph fusion"]
     end
     
     subgraph "TECHNIQUES"
@@ -308,18 +308,18 @@ graph TB
 
 ```mermaid
 flowchart TB
-    subgraph "1️⃣ User Input"
+    subgraph "1️ User Input"
         USER["Developer asks:<br/>'PDF parser for LangChain in Python'"]
     end
     
-    subgraph "2️⃣ Intent Understanding (Gemini)"
+    subgraph "2️ Intent Understanding (Gemini)"
         USER --> PARSE["Parse Query"]
         PARSE --> INTENT["Intent: compatibility"]
         PARSE --> ENTITIES["Entities: PDF, LangChain, Python"]
         PARSE --> CONSTRAINTS["Constraints: DEPENDS_ON langchain"]
     end
     
-    subgraph "3️⃣ Dual Search Strategy"
+    subgraph "3️ Dual Search Strategy"
         INTENT --> DECISION{Strategy}
         DECISION -->|Semantic| VECTOR["Pinecone Search<br/>'PDF parser Python'"]
         DECISION -->|Structural| GRAPH["Neo4j Query<br/>repos → langchain"]
@@ -328,16 +328,16 @@ flowchart TB
         GRAPH --> G_RESULTS["unstructured, langchain-pdf,<br/>docarray, llama-index"]
     end
     
-    subgraph "4️⃣ Fusion & Ranking"
+    subgraph "4️ Fusion & Ranking"
         V_RESULTS --> FUSION["Reciprocal Rank Fusion"]
         G_RESULTS --> FUSION
         FUSION --> RERANK["Gemini Reranking<br/>by query relevance"]
         RERANK --> FINAL["Final Ranked List:<br/>1. unstructured<br/>2. pypdf<br/>3. langchain-pdf"]
     end
     
-    subgraph "5️⃣ Response Generation"
+    subgraph "5️ Response Generation"
         FINAL --> RESPONSE["Gemini generates explanation:<br/>'Based on your LangChain stack,<br/>I recommend unstructured because...'"]
-        RESPONSE --> OUTPUT["✅ Actionable Answer"]
+        RESPONSE --> OUTPUT[" Actionable Answer"]
     end
     
     style OUTPUT fill:#4ade80,stroke:#333,stroke-width:3px
@@ -427,7 +427,7 @@ graph TB
 
 ---
 
-## 🏗 System Architecture
+##  System Architecture
 
 ```mermaid
 graph TB
@@ -470,7 +470,7 @@ graph TB
 
 ---
 
-## 🔄 Data Flow
+##  Data Flow
 
 ### Query Processing Flow
 
@@ -530,7 +530,7 @@ flowchart LR
 
 ---
 
-## 🤖 Agent Workflow (LangGraph)
+##  Agent Workflow (LangGraph)
 
 ```mermaid
 stateDiagram-v2
