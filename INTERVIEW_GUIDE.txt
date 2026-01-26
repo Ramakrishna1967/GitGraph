@@ -1,15 +1,4 @@
 
-   
-   WHAT THIS CREATES:
-       (langchain) --DEPENDS_ON--> (pydantic)
-       (langchain) --DEPENDS_ON--> (openai)
-
-
-3. find_repos_depending_on(dependency, limit)
-   -------------------------------------------
-   PURPOSE: Find all repos that use a specific package
-   
-   CYPHER QUERY:
        MATCH (r:Repository)-[:DEPENDS_ON]->(dep:Repository)
        WHERE dep.name = $dependency
        RETURN r.full_name, r.name, r.stars, ...
