@@ -41,8 +41,8 @@ def test_pinecone():
         pinecone_client.create_index()
         stats = pinecone_client.get_stats()
         print(f"Pinecone connection successful")
-        print(f"   Index: {settings.PINECONE_INDEX_NAME}")
-        print(f"   Vectors: {stats.get('total_vector_count', 0)}")
+        print(f"Index: {settings.PINECONE_INDEX_NAME}")
+        print(f"Vectors: {stats.get('total_vector_count', 0)}")
         return True
     except Exception as e:
         print(f"Pinecone error: {e}")
@@ -56,7 +56,7 @@ def test_embedding():
         test_text = "LangChain is a framework for building LLM applications"
         vector = pinecone_client.embed_text(test_text)
         print(f"Embedding generated successfully")
-        print(f"   Dimension: {len(vector)}")
+        print(f"Dimension: {len(vector)}")
         return True
     except Exception as e:
         print(f"Embedding error: {e}")
