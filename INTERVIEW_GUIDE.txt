@@ -1,15 +1,3 @@
-================================================================================
-                    GITGRAPH RAG - COMPLETE CODE EXPLANATION
-                         For Interview Preparation
-================================================================================
-
-Author: Ramakrishna
-Project: GitGraph RAG - Hybrid Search Engine for GitHub Repository Discovery
-Budget: $0 (All Free Tiers)
-
-================================================================================
-                              TABLE OF CONTENTS
-================================================================================
 
 1. PROJECT OVERVIEW
 2. ARCHITECTURE DIAGRAM  
