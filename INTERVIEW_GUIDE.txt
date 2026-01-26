@@ -1,37 +1,4 @@
 
-    3. Settings class holds all config in one place
-    4. Other files import: from config import settings
-
-WHY THIS PATTERN:
-    - Single source of truth for config
-    - Easy to add validation
-    - Easy to mock in tests
-    - Type hints for IDE support
-
-INTERVIEW TIP:
-    "Centralized config prevents scattered os.getenv calls throughout the 
-    codebase and makes configuration changes easier to manage."
-
-
---------------------------------------------------------------------------------
-FILE: db/schemas.py
-LOCATION: db/schemas.py  
-PURPOSE: Data validation and type safety using Pydantic
---------------------------------------------------------------------------------
-
-CODE:
-    from pydantic import BaseModel
-    
-    class RepoMetadata(BaseModel):
-        name: str
-        full_name: str
-        description: str | None = None
-        stars: int = 0
-        language: str | None = None
-        url: str = ""
-    
-    class RepoResult(BaseModel):
-        name: str
         full_name: str
         description: str | None = None
         stars: int = 0
