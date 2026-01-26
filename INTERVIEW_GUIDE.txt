@@ -1,14 +1,4 @@
 
-1. PROJECT OVERVIEW
-2. ARCHITECTURE DIAGRAM  
-3. FILE-BY-FILE EXPLANATION
-4. DATA FLOW WALKTHROUGH
-5. KEY INTERVIEW QUESTIONS & ANSWERS
-6. TECHNOLOGY CHOICES & JUSTIFICATIONS
-
-================================================================================
-                           1. PROJECT OVERVIEW
-================================================================================
 
 PROBLEM:
 ---------
