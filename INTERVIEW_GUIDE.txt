@@ -1,31 +1,5 @@
 
 
-PROBLEM:
----------
-GitHub search sucks. When you search "async HTTP library", you only get repos 
-with those EXACT words. You miss httpx, aiohttp, asks - repos that DO what you
-want but use different words.
-
-Also, GitHub doesn't know relationships. It can't tell you "which repos work 
-well with LangChain?" because it doesn't track dependencies.
-
-SOLUTION:
----------
-GitGraph RAG combines TWO types of search:
-
-1. VECTOR SEARCH (Pinecone + Gemini Embeddings)
-   - Converts text to numbers (vectors) that represent MEANING
-   - "async HTTP client" matches "aiohttp" because they have similar vectors
-   - This is called SEMANTIC search
-
-2. GRAPH SEARCH (Neo4j)
-   - Stores relationships: "LangChain DEPENDS_ON Pydantic"
-   - Can answer "what repos use LangChain?" by traversing edges
-   - This is called STRUCTURAL search
-
-The HYBRID approach combines both for better results.
-
-
 ================================================================================
                           2. ARCHITECTURE DIAGRAM
 ================================================================================
