@@ -5,20 +5,6 @@
                                     THE 3 PROBLEMS WE SOLVE
 ═══════════════════════════════════════════════════════════════════════════════════════════════════
 
-
-    ┌─────────────────────────────┐     ┌─────────────────────────────┐     ┌─────────────────────────────┐
-    │                             │     │                             │     │                             │
-    │   ❌ PROBLEM 1              │     │   ❌ PROBLEM 2              │     │   ❌ PROBLEM 3              │
-    │                             │     │                             │     │                             │
-    │   SEMANTIC BLINDNESS        │     │   STRUCTURAL BLINDNESS      │     │   DECISION PARALYSIS        │
-    │                             │     │                             │     │                             │
-    │   GitHub uses keywords      │     │   Repos are isolated        │     │   500+ results              │
-    │   not concepts              │     │   No relationship data      │     │   No stack filtering        │
-    │                             │     │                             │     │                             │
-    │   "async HTTP" won't find   │     │   Can't answer:             │     │   Developer must read       │
-    │   "non-blocking requests"   │     │   "works with LangChain?"   │     │   every README manually     │
-    │                             │     │                             │     │                             │
-    └─────────────────────────────┘     └─────────────────────────────┘     └─────────────────────────────┘
               │                                   │                                   │
               │                                   │                                   │
               ▼                                   ▼                                   ▼
