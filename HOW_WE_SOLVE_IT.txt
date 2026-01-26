@@ -1,32 +1,4 @@
 
-                    │                                   │
-                    └───────────────────────────────────┘
-                                        │
-                                        ▼
-                    ┌───────────────────────────────────┐
-                    │      CONVERT TO VECTOR            │
-                    │                                   │
-                    │   Query → [0.23, 0.87, 0.12, ...] │
-                    │   (768 numbers representing       │
-                    │    the MEANING of the query)      │
-                    │                                   │
-                    └───────────────────────────────────┘
-                                        │
-                                        ▼
-                    ┌───────────────────────────────────┐
-                    │         PINECONE                  │
-                    │     (Vector Database)             │
-                    │                                   │
-                    │   Find READMEs with similar       │
-                    │   MEANING, not just keywords      │
-                    │                                   │
-                    └───────────────────────────────────┘
-                                        │
-                                        ▼
-                    ┌───────────────────────────────────┐
-                    │       ✅ PERFECT RESULTS          │
-                    │                                   │
-                    │   1. httpx    (score: 0.94)       │
                     │   2. aiohttp  (score: 0.91)       │
                     │   3. asks     (score: 0.88)       │
                     │   4. treq     (score: 0.85)       │
