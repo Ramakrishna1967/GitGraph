@@ -1,33 +1,4 @@
 
-
-================================================================================
-                          2. ARCHITECTURE DIAGRAM
-================================================================================
-
-USER QUERY: "PDF parser for langchain"
-                    |
-                    v
-            +---------------+
-            |   Streamlit   |  <-- Frontend (app/main.py)
-            |   Web UI      |
-            +---------------+
-                    |
-                    v
-            +---------------+
-            |  search.py    |  <-- Search Logic (agent/search.py)
-            |  (Hybrid)     |
-            +-------+-------+
-                    |
-        +-----------+-----------+
-        |                       |
-        v                       v
-+---------------+       +---------------+
-|   Pinecone    |       |    Neo4j      |
-|   (Vectors)   |       |   (Graph)     |
-+---------------+       +---------------+
-        |                       |
-        v                       v
-  "Find repos           "Find repos that
    with similar          DEPEND ON
    README meaning"       langchain"
         |                       |
