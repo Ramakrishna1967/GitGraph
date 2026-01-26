@@ -1,36 +1,4 @@
 
-    - NEVER hardcode secrets in source code
-    - .gitignore prevents this file from being committed
-    - Each environment (dev, prod) can have different values
-
-INTERVIEW TIP:
-    "I use environment variables for secrets so they're never in version 
-    control. This follows the 12-factor app methodology."
-
-
---------------------------------------------------------------------------------
-FILE: config/settings.py
-LOCATION: config/settings.py
-PURPOSE: Centralized configuration management
---------------------------------------------------------------------------------
-
-CODE:
-    import os
-    from dotenv import load_dotenv
-    
-    load_dotenv()  # Reads .env file
-    
-    class Settings:
-        GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
-        PINECONE_API_KEY = os.getenv("PINECONE_API_KEY", "")
-        NEO4J_URI = os.getenv("NEO4J_URI", "")
-        ...
-    
-    settings = Settings()  # Single instance
-
-HOW IT WORKS:
-    1. load_dotenv() reads the .env file
-    2. os.getenv() fetches each variable
     3. Settings class holds all config in one place
     4. Other files import: from config import settings
 
