@@ -1,34 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-                    ❌ GITHUB'S WAY (Broken)
-                    ─────────────────────────
-
-                    User searches: "async HTTP client"
-                                        │
-                                        ▼
-                    ┌───────────────────────────────────┐
-                    │       KEYWORD MATCHING            │
-                    │                                   │
-                    │   Looking for exact words:        │
-                    │   "async" OR "HTTP" OR "client"   │
-                    │                                   │
-         
-                                        ▼
-                    ┌───────────────────────────────────┐
-                    │         GEMINI AI                 │
-                    │                                   │
-                    │   Understands the CONCEPT:        │
-                    │   • Asynchronous programming      │
-                    │   • HTTP requests                 │
-                    │   • Network library               │
                     │                                   │
                     └───────────────────────────────────┘
                                         │
