@@ -1,21 +1,4 @@
 
-           ...
-   
-   WHAT THIS CREATES:
-       (langchain-ai/langchain)
-           - name: "langchain"
-           - stars: 75000
-           - language: "Python"
-
-
-2. create_dependency(from_repo, to_repo)
-   --------------------------------------
-   PURPOSE: Create a DEPENDS_ON relationship
-   
-   CYPHER QUERY:
-       MATCH (from:Repository {full_name: $from_repo})
-       MERGE (to:Repository {full_name: $to_repo})
-       MERGE (from)-[:DEPENDS_ON]->(to)
    
    WHAT THIS CREATES:
        (langchain) --DEPENDS_ON--> (pydantic)
