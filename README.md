@@ -63,7 +63,6 @@ python seed_database.py
 streamlit run app/main.py
 ```
 
-Visit **http://localhost:8501** 🎉
 
 ---
 
