@@ -1,7 +1,7 @@
 # 🧠 GitGraph RAG
 
 > **Hybrid Search Engine for GitHub Repository Discovery**  
-> Built with $0 budget using only free tiers | 2026
+
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python&logoColor=white)](https://python.org)
