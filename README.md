@@ -111,12 +111,12 @@ streamlit run app/main.py
 
 | Component | Technology | Cost |
 |-----------|------------|------|
-| **Frontend** | Streamlit Community Cloud | $0 |
-| **LLM** | Gemini 1.5 Flash (15 RPM) | $0 |
-| **Vector DB** | Pinecone Serverless (100K vectors) | $0 |
-| **Graph DB** | Neo4j Aura (200K nodes) | $0 |
-| **Embeddings** | Gemini text-embedding-004 | $0 |
-| **Total** | | **$0/month** |
+| **Frontend** | Streamlit Community Cloud 
+| **LLM** | Gemini 1.5 Flash (15 RPM) 
+| **Vector DB** | Pinecone Serverless (100K vectors)
+| **Graph DB** | Neo4j Aura (200K nodes) 
+| **Embeddings** | Gemini text-embedding-004 
+| **Total** |
 
 ---
 
@@ -172,37 +172,7 @@ GITGRAPH/
 
 ---
 
-## 🤝 Contributing
-
-This is a portfolio project, but suggestions are welcome!
-
-1. Fork the repo
-2. Create a feature branch
-3. Submit a pull request
 
 ---
 
-## 📝 License
 
-MIT License - see [LICENSE](LICENSE) file
-
----
-
-## 👨‍💻 Author
-
-**Ramakrishna**  
-Portfolio Project | 2026  
-*Proving that $0 budget ≠ $0 value*
-
----
-
-## 🙏 Acknowledgments
-
-- Built with [Streamlit](https://streamlit.io)
-- Powered by [Google Gemini](https://ai.google.dev)
-- Vector search by [Pinecone](https://www.pinecone.io)
-- Graph database by [Neo4j](https://neo4j.com)
-
----
-
-**⭐ If this helped you, consider starring the repo!**
