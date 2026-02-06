@@ -165,7 +165,7 @@ GITGRAPH/
 ## 🔮 Future Enhancements
 
 - [ ] Expand to 1000+ repos
-- [ ] Add `ALTERNATIVE_TO` relationships
+
 
 
 
