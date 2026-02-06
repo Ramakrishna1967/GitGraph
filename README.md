@@ -166,7 +166,7 @@ GITGRAPH/
 
 - [ ] Expand to 1000+ repos
 - [ ] Add `ALTERNATIVE_TO` relationships
-- [ ] GitHub Actions for daily data refresh
+
 
 
 
