@@ -168,7 +168,7 @@ GITGRAPH/
 - [ ] Add `ALTERNATIVE_TO` relationships
 - [ ] GitHub Actions for daily data refresh
 - [ ] User "Stack DNA" profiles
-- [ ] Dependency conflict detection
+
 
 ---
 
