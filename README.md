@@ -164,7 +164,6 @@ GITGRAPH/
 
 ## 🔮 Future Enhancements
 
-- [ ] Expand to 1000+ repos
 
 
 
