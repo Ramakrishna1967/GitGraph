@@ -904,21 +904,6 @@ GITGRAPH/
 ├── requirements.txt
 ├── README.md
 └── ARCHITECTURE.md           # This file
-```
 
----
 
-## 🔗 Quick Links
 
-| Resource | URL |
-|----------|-----|
-| Streamlit Cloud | https://streamlit.io/cloud |
-| Neo4j Aura | https://neo4j.com/cloud/aura/ |
-| Pinecone | https://www.pinecone.io/ |
-| Google AI Studio | https://aistudio.google.com/ |
-| LangGraph Docs | https://langchain-ai.github.io/langgraph/ |
-
----
-
-> **Built with Ramakrishna | 2026**  
-> *Proving that $0 budget ≠ $0 value*
