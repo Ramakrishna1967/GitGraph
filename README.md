@@ -749,56 +749,6 @@ gantt
     GitHub Actions CI/CD        :e2, after e1, 1d
 ```
 
-### Phase Breakdown
-
-#### Phase 1: Foundation (Days 1-2)
-```
-□ Initialize project structure
-□ Set up virtual environment
-□ Create Neo4j Aura instance
-□ Create Pinecone index
-□ Configure environment variables
-□ Set up Git repository
-```
-
-#### Phase 2: Data Pipeline (Days 3-5)
-```
-□ Build GitHub API client with rate limiting
-□ Parse requirements.txt / pyproject.toml / package.json
-□ Create README embedding pipeline
-□ Build Cypher queries for graph population
-□ Load initial dataset (1000 popular repos)
-```
-
-#### Phase 3: Agent Core (Days 6-9)
-```
-□ Define LangGraph state schema
-□ Implement query parser (Gemini)
-□ Implement vector search node
-□ Implement graph traversal node
-□ Implement fusion logic (RRF)
-□ Implement response generator
-□ Add retry/fallback logic
-```
-
-#### Phase 4: Frontend (Days 10-11)
-```
-□ Build Streamlit layout
-□ Create search input component
-□ Build results cards
-□ Add graph visualization (optional)
-□ Style with custom CSS
-```
-
-#### Phase 5: Deployment (Days 12-14)
-```
-□ Push to GitHub
-□ Connect Streamlit Cloud
-□ Configure secrets
-□ Set up GitHub Actions for data refresh
-□ Write README documentation
-□ Create demo video
-```
 
 ---
 
