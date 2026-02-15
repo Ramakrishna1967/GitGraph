@@ -1,6 +1,6 @@
 #  GitGraph RAG: Complete Architecture & Deployment Guide
 
-> **A $0 Hybrid Search Engine for GitHub Repository Discovery**  
+> **A  Hybrid Search Engine for GitHub Repository Discovery**  
 > Built for 2026 | Free Tier Only | Production Ready
 
 ---
