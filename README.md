@@ -7,7 +7,6 @@
 
 1. [The Problem](#-the-problem)
 2. [The Solution](#-the-solution)
-3. [Tech Stack ($0 Budget)](#-tech-stack-0-budget)
 4. [System Architecture](#-system-architecture)
 5. [Data Flow](#-data-flow)
 6. [Agent Workflow](#-agent-workflow-langgraph)
