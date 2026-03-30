@@ -373,8 +373,7 @@ graph LR
 
 ---
 
-## �🛠 Tech Stack ($0 Budget)
-
+## �🛠 Tech Stack 
 ```mermaid
 graph TB
     subgraph "Frontend - FREE"
