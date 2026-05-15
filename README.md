@@ -654,7 +654,7 @@ graph LR
 
 ---
 
-## 🚀 Deployment Strategy
+##  Deployment Strategy
 
 ```mermaid
 graph TB
@@ -748,42 +748,11 @@ gantt
 
 ---
 
-## 💰 Cost Breakdown
 
-```mermaid
-pie title Monthly Operating Cost
-    "Streamlit Cloud" : 0
-    "Pinecone Starter" : 0
-    "Neo4j Aura Free" : 0
-    "Gemini Free Tier" : 0
-    "GitHub Actions" : 0
-    "Domain (Optional)" : 0
-```
-
-### Detailed Cost Analysis
-
-| Service | Free Tier Limit | Our Usage | Monthly Cost |
-|---------|-----------------|-----------|--------------|
-| Streamlit Cloud | Unlimited public apps | 1 app | **$0** |
-| Pinecone Serverless | 100K vectors | ~50K | **$0** |
-| Neo4j Aura | 200K nodes | ~100K | **$0** |
-| Gemini 1.5 Flash | 15 RPM, 1M TPM | ~10 RPM avg | **$0** |
-| GitHub Actions | 2000 min/month | ~100 min | **$0** |
-| Custom Domain | Optional | - | **$0-12/yr** |
-| **TOTAL** | | | **$0** |
-
-### Scaling Path (If Needed Later)
-
-| Trigger | Upgrade Path | New Cost |
-|---------|--------------|----------|
-| >100K vectors | Pinecone Standard | $70/mo |
-| >200K nodes | Neo4j Aura Pro | $65/mo |
-| >15 RPM sustained | Gemini Pay-as-you-go | ~$0.001/query |
-| Custom domain | Namecheap/Cloudflare | $12/year |
 
 ---
 
-## 🎯 Success Metrics
+##  Success Metrics
 
 ```mermaid
 graph LR
