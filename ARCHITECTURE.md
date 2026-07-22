@@ -1,7 +1,6 @@
 #  GitGraph RAG: Complete Architecture & Deployment Guide
 
 > **A  Hybrid Search Engine for GitHub Repository Discovery**  
-> Built for 2026 | Production Ready
 
 ---
 
@@ -370,9 +369,9 @@ graph LR
 
 | Approach | Strength | Weakness | GitGraph Combines Both |
 |----------|----------|----------|------------------------|
-| **Vector Only** | Finds similar concepts | Can't verify compatibility | ✅ Semantic understanding |
-| **Graph Only** | Perfect for relationships | Can't handle fuzzy queries | ✅ Structural awareness |
-| **Hybrid (Ours)** | Best of both worlds | Complexity | ✅ Managed by LangGraph |
+| **Vector Only** | Finds similar concepts | Can't verify compatibility |  Semantic understanding |
+| **Graph Only** | Perfect for relationships | Can't handle fuzzy queries |  Structural awareness |
+| **Hybrid (Ours)** | Best of both worlds | Complexity |  Managed by LangGraph |
 
 ---
 
@@ -658,7 +657,7 @@ graph LR
 
 ---
 
-## 🚀 Deployment Strategy
+##  Deployment Strategy
 
 ```mermaid
 graph TB
@@ -716,7 +715,7 @@ GITHUB_TOKEN = "ghp_xxxxx"  # For API rate limits
 
 ---
 
-## 📅 Implementation Roadmap
+##  Implementation Roadmap
 
 ```mermaid
 gantt
@@ -748,94 +747,6 @@ gantt
     Streamlit Cloud Deploy      :e1, after d2, 1d
     GitHub Actions CI/CD        :e2, after e1, 1d
 ```
-
-### Phase Breakdown
-
-#### Phase 1: Foundation (Days 1-2)
-```
-□ Initialize project structure
-□ Set up virtual environment
-□ Create Neo4j Aura instance
-□ Create Pinecone index
-□ Configure environment variables
-□ Set up Git repository
-```
-
-#### Phase 2: Data Pipeline (Days 3-5)
-```
-□ Build GitHub API client with rate limiting
-□ Parse requirements.txt / pyproject.toml / package.json
-□ Create README embedding pipeline
-□ Build Cypher queries for graph population
-□ Load initial dataset (1000 popular repos)
-```
-
-#### Phase 3: Agent Core (Days 6-9)
-```
-□ Define LangGraph state schema
-□ Implement query parser (Gemini)
-□ Implement vector search node
-□ Implement graph traversal node
-□ Implement fusion logic (RRF)
-□ Implement response generator
-□ Add retry/fallback logic
-```
-
-#### Phase 4: Frontend (Days 10-11)
-```
-□ Build Streamlit layout
-□ Create search input component
-□ Build results cards
-□ Add graph visualization (optional)
-□ Style with custom CSS
-```
-
-#### Phase 5: Deployment (Days 12-14)
-```
-□ Push to GitHub
-□ Connect Streamlit Cloud
-□ Configure secrets
-□ Set up GitHub Actions for data refresh
-□ Write README documentation
-□ Create demo video
-```
-
----
-
-## 💰 Cost Breakdown
-
-```mermaid
-pie title Monthly Operating Cost
-    "Streamlit Cloud" : 0
-    "Pinecone Starter" : 0
-    "Neo4j Aura Free" : 0
-    "Gemini Free Tier" : 0
-    "GitHub Actions" : 0
-    "Domain (Optional)" : 0
-```
-
-### Detailed Cost Analysis
-
-| Service | Free Tier Limit | Our Usage | Monthly Cost |
-|---------|-----------------|-----------|--------------|
-| Streamlit Cloud | Unlimited public apps | 1 app | **$0** |
-| Pinecone Serverless | 100K vectors | ~50K | **$0** |
-| Neo4j Aura | 200K nodes | ~100K | **$0** |
-| Gemini 1.5 Flash | 15 RPM, 1M TPM | ~10 RPM avg | **$0** |
-| GitHub Actions | 2000 min/month | ~100 min | **$0** |
-| Custom Domain | Optional | - | **$0-12/yr** |
-| **TOTAL** | | | **$0** |
-
-### Scaling Path (If Needed Later)
-
-| Trigger | Upgrade Path | New Cost |
-|---------|--------------|----------|
-| >100K vectors | Pinecone Standard | $70/mo |
-| >200K nodes | Neo4j Aura Pro | $65/mo |
-| >15 RPM sustained | Gemini Pay-as-you-go | ~$0.001/query |
-| Custom domain | Namecheap/Cloudflare | $12/year |
-
----
 
 ## 🎯 Success Metrics
 
