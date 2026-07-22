@@ -1,7 +1,7 @@
 #  GitGraph RAG: Complete Architecture & Deployment Guide
 
 > **A  Hybrid Search Engine for GitHub Repository Discovery**  
-> Built for 2026 | Free Tier Only | Production Ready
+> Built for 2026 | Production Ready
 
 ---
 
@@ -84,7 +84,7 @@ graph LR
 
 ---
 
-## � How We Solve Each Problem (Detailed)
+## � How We Solve Each Problem
 
 ### Problem 1: Semantic Blindness
 
