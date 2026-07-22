@@ -8,15 +8,12 @@
 
 1. [The Problem](#-the-problem)
 2. [The Solution](#-the-solution)
-3. [Tech Stack ($0 Budget)](#-tech-stack-0-budget)
 4. [System Architecture](#-system-architecture)
 5. [Data Flow](#-data-flow)
 6. [Agent Workflow](#-agent-workflow-langgraph)
 7. [Database Design](#-database-design)
 8. [Deployment Strategy](#-deployment-strategy)
 9. [Implementation Roadmap](#-implementation-roadmap)
-10. [Cost Breakdown](#-cost-breakdown)
-
 ---
 
 ##  The Problem
@@ -375,7 +372,7 @@ graph LR
 
 ---
 
-## �🛠 Tech Stack ($0 Budget)
+## �🛠 Tech Stack
 
 ```mermaid
 graph TB
@@ -414,15 +411,6 @@ graph TB
     GH --> PC
 ```
 
-### Why These Specific Tools?
-
-| Tool | Why Not Alternatives? |
-|------|----------------------|
-| **Gemini 1.5 Flash** | 1M token context (vs GPT-4o's 128K). Can process entire sub-graphs. |
-| **Neo4j Aura** | Native graph traversal. SQL/Mongo can't do O(1) relationship hops. |
-| **Pinecone** | Serverless = no cold starts. Weaviate/Qdrant need self-hosting. |
-| **LangGraph** | Cyclic workflows. LangChain is linear, can't retry/switch strategies. |
-| **Streamlit** | Python-native. Next.js would need separate backend. |
 
 ---
 
@@ -596,7 +584,7 @@ class GitGraphState(TypedDict):
 
 ---
 
-## 🗄 Database Design
+##  Database Design
 
 ### Neo4j Graph Schema
 
@@ -690,16 +678,7 @@ graph TB
     style STC fill:#ff4b4b,stroke:#333,stroke-width:3px
 ```
 
-### Deployment Platforms (All $0)
 
-| Component | Platform | Free Tier Limits |
-|-----------|----------|-----------------|
-| **Frontend + Backend** | Streamlit Community Cloud | Unlimited public apps |
-| **Vector DB** | Pinecone Serverless | 100K vectors, 1 index |
-| **Graph DB** | Neo4j Aura | 200K nodes, 400K relationships |
-| **LLM API** | Google AI Studio | 15 RPM, 1M TPM |
-| **CI/CD** | GitHub Actions | 2000 min/month |
-| **Data Refresh** | GitHub Actions CRON | Free with repo |
 
 ### Environment Variables (Secrets)
 
@@ -715,40 +694,9 @@ GITHUB_TOKEN = "ghp_xxxxx"  # For API rate limits
 
 ---
 
-##  Implementation Roadmap
-
-```mermaid
-gantt
-    title GitGraph RAG - 2 Week Sprint
-    dateFormat  YYYY-MM-DD
-    section Phase 1: Foundation
-    Project Setup & Configs     :a1, 2026-01-27, 1d
-    Neo4j Schema Design         :a2, after a1, 1d
-    Pinecone Index Setup        :a3, after a1, 1d
-    
-    section Phase 2: Data Pipeline
-    GitHub Fetcher              :b1, after a2, 2d
-    Embedding Pipeline          :b2, after b1, 1d
-    Graph Builder               :b3, after b1, 1d
-    Initial Data Load           :b4, after b2, 1d
-    
-    section Phase 3: Agent Core
-    LangGraph Skeleton          :c1, after b4, 1d
-    Query Parser Node           :c2, after c1, 1d
-    Vector Search Node          :c3, after c2, 1d
-    Graph Traversal Node        :c4, after c2, 1d
-    Fusion & Rerank Node        :c5, after c3, 1d
-    
-    section Phase 4: Frontend
-    Streamlit UI                :d1, after c5, 2d
-    Results Visualization       :d2, after d1, 1d
-    
-    section Phase 5: Deploy
-    Streamlit Cloud Deploy      :e1, after d2, 1d
-    GitHub Actions CI/CD        :e2, after e1, 1d
 ```
 
-## 🎯 Success Metrics
+##  Success Metrics
 
 ```mermaid
 graph LR
@@ -773,7 +721,7 @@ graph LR
 
 ---
 
-## 📁 Final Project Structure
+##  Final Project Structure
 
 ```
 GITGRAPH/
